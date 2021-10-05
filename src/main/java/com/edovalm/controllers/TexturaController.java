@@ -41,6 +41,7 @@ public class TexturaController {
 		Textura texEnBD = texturaService.findById(id).get();
 		texEnBD.setNombreTextura(textura.getNombreTextura()); 
 		texEnBD.setImgTextura(textura.getImgTextura()); 
+		//texEnBD.setProductos(textura.getProductos()); //En caso de bidireccionalidad
 		texturaService.save(texEnBD);
 		return textura;
 	}

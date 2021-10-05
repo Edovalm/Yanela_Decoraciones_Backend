@@ -20,7 +20,12 @@ public class Textura {
 	
 	@Column(name = "img_textura")
 	private String imgTextura;
-
+	
+	//En caso de bidireccionalidad 
+	//(Se tendrían que hacer importaciones, geters & seters y toString):
+	//@ManyToMany(mappedBy = "texturas")
+	//private List<Producto> productos = new ArrayList<Producto>();
+	
 	public Integer getIdTextura() {
 		return idTextura;
 	}

@@ -20,6 +20,9 @@ public class Categoria {
 	
 	@Column(name = "img_categoria")
 	private String imgCategoria;
+	
+	@Column(name = "descripcion_categoria")
+	private String descripcionCategoria;
 
 	public Integer getIdCategoria() {
 		return idCategoria;
@@ -45,10 +48,17 @@ public class Categoria {
 		this.imgCategoria = imgCategoria;
 	}
 
+	public String getDescripcionCategoria() {
+		return descripcionCategoria;
+	}
+
+	public void setDescripcionCategoria(String descripcionCategoria) {
+		this.descripcionCategoria = descripcionCategoria;
+	}
+
 	@Override
 	public String toString() {
 		return "Categoria [idCategoria=" + idCategoria + ", nombreCategoria=" + nombreCategoria + ", imgCategoria="
-				+ imgCategoria + "]";
+				+ imgCategoria + ", descripcionCategoria=" + descripcionCategoria + "]";
 	}
-
 }

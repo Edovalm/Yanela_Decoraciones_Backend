@@ -47,6 +47,7 @@ public class CategoriaController {
 		Categoria catEnBD = categoriaService.findById(id).get();
 		catEnBD.setNombreCategoria(categoria.getNombreCategoria()); 
 		catEnBD.setImgCategoria(categoria.getImgCategoria()); 
+		catEnBD.setDescripcionCategoria(categoria.getDescripcionCategoria()); 
 		categoriaService.save(catEnBD);
 		return categoria;
 	}
